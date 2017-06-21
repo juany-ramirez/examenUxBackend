@@ -1,65 +1,65 @@
 var studentsController = require('./controllers/studentsController');
 var usersController = require('./controllers/usersController');
 var authController = require('./controllers/authController');
-var booksController = require('./controllers/booksController');
+var hechizosController = require('./controllers/hechizosController');
 
 exports.endpoints = [
 	{
 			method: 'GET',
-		 	path: '/books',
-		 	config: booksController.getBooks
+		 	path: '/hechizos',
+		 	config: hechizosController.getBooks
  	},
 
 	{
 			method: 'GET',
-			path: '/books/searchbyid/{id}',
-			config: booksController.getBookId
+			path: '/hechizos/searchbyid/{id}',
+			config: hechizosController.getBookId
  	},
 	{
 			method: 'GET',
-			path: '/books/searchbyname/{titulo}',
-			config: booksController.getBookName
+			path: '/hechizos/searchbyname/{titulo}',
+			config: hechizosController.getBookName
  	},
 	{
 			method: 'GET',
-			path: '/books/searchbygenre/{genero}',
-			config: booksController.getBookGenre
+			path: '/hechizos/searchbygenre/{genero}',
+			config: hechizosController.getBookGenre
  	},
 	{
 			method: 'GET',
-			path: '/books/searchbyauthor/{autor}',
-			config: booksController.getBookAuthor
+			path: '/hechizos/searchbyauthor/{autor}',
+			config: hechizosController.getBookAuthor
  	},
 	{
 			method: 'GET',
-			path: '/books/searchbykey', //FALTA HACER EJEMPLO POSTMAN
-			config: booksController.getBookKey
+			path: '/hechizos/searchbykey', //FALTA HACER EJEMPLO POSTMAN
+			config: hechizosController.getBookKey
  	},
 	{
 			method: 'GET',
-			path: '/books/borrowed',
-			config: booksController.getBookPrestado
+			path: '/hechizos/borrowed',
+			config: hechizosController.getBookPrestado
  	},
  	{
  			method: 'PUT',
- 			path: '/books/update/{id}',
- 			config: booksController.modifyBook
+ 			path: '/hechizos/update/{id}',
+ 			config: hechizosController.modifyBook
 
  	},
 	{
 			method: 'PUT',
-			path: '/books/borrowbook/{id}',
-			config: booksController.putBookPrestado
+			path: '/hechizos/borrowbook/{id}',
+			config: hechizosController.putBookPrestado
  	},
 	{
 			method: 'DELETE',
-			path: '/books/delete/{id}',
-			config: booksController.deleteBook
+			path: '/hechizos/delete/{id}',
+			config: hechizosController.deleteBook
  	},
 	{
 			method: 'POST',
-			path: '/books/create',
-			config: booksController.createBook
+			path: '/hechizos/create',
+			config: hechizosController.createBook
  	},
 	{
 		method: 'GET',

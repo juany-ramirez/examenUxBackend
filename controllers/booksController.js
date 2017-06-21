@@ -1,6 +1,6 @@
 var book = require('../schemas/book');
 var mongoose = require('mongoose');
-
+var boom = require('boom');
 //Get all books
 exports.getBooks = {
   handler: function(request, reply){

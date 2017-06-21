@@ -8,7 +8,11 @@ exports.createUser = {
     var newUser = new user({
       username : request.payload.username,
       password : SHA3(request.payload.password),
-      scope : request.payload.scope
+      scope : request.payload.scope,
+      ocupacion : request.payload.ocupacion,
+      nacimiento : request.payload.nacimiento,
+      creencias : request.payload.creencias,
+      amigos : request.payload.amigos
     });
     newUser.save(function (err) {
       if(err){
@@ -19,5 +23,3 @@ exports.createUser = {
     });
   }
 };
-
-

@@ -1,4 +1,5 @@
 var student = require('../schemas/student');
+var boom = require('boom');
 
 exports.getStudents = {
   auth: {
