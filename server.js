@@ -15,7 +15,7 @@ server.connection({
     }
 });
 
-mongoose.connect('mongodb://admin:admin@ds115752.mlab.com:15752/biblioteca');
+mongoose.connect('mongodb://admin:admin@ds133922.mlab.com:33922/examen');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
